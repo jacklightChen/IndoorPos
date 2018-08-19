@@ -63,3 +63,7 @@ clone项目用xcode打开
 需要先按步骤接入fengmap:https://www.fengmap.com/develop-ios-guide.html
 
 ### 项目展示
+只有三个ibeacon时的定位demo:
+![定位](https://github.com/jacklightChen/Indoorpos/blob/master/demopicture/point.png)
+办公室地图:
+![办公室](https://github.com/jacklightChen/Indoorpos/blob/master/demopicture/office.jpg)
