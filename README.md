@@ -64,6 +64,9 @@ clone项目用xcode打开
 
 ### 项目展示
 只有三个ibeacon时的定位demo:
-![定位](https://github.com/jacklightChen/Indoorpos/blob/master/demopicture/point.png)
+![定位](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/point.png)
 办公室地图:
-![办公室](https://github.com/jacklightChen/Indoorpos/blob/master/demopicture/office.jpg)
+![办公室](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/office.jpg)
+项目2D效果:
+![png](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png)
+![mp4](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.mp4)
