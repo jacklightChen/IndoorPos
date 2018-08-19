@@ -18,44 +18,44 @@ AR | ARKit
 ├──FMMapKit (蜂鸟云地图sdk）
 ├──location.xcodeproj
 ├──location	
-		├── AppDelegate
-		│   ├── AppDelegate.h
-		│   └── AppDelegate.m (配置蜂鸟云地图sdk)
-		├── Assets.xcassets
-		├── Base.lproj
-		├── Controller
-		│   ├── ARViewController.h 
-		│   ├── ARViewController.m (AR场景)
-		│   ├── BRTBeaconScan.h 
-		│   ├── BRTBeaconScan.m (扫描ibeacon并设置每个ibeacon放置的位置 在回调中传参给地图显示定位点)
-		│   ├── BRTViewController.h (已弃用)
-		│   ├── BRTViewController.m (已弃用)
-		│   ├── BeaconViewController.h (已弃用)
-		│   ├── BeaconViewController.mm (已弃用)
-		│   ├── MapViewController.h
-		│   ├── MapViewController.m (提供2D地图的操作)
-		│   ├── ViewController.h (已弃用)
-		│   └── ViewController.m (已弃用)
-		├── Info.plist 
-		├── MapData
-		│   ├── 10347.fmap
-		│   ├── cmbintern.fmap (专门绘制的办公室地图)
-		│   ├── xierqisubway
-		├── Model
-		│   ├── Coordination.h 
-		│   ├── Coordination.m (坐标包装类)
-		│   ├── IbeaconInfo.h (已弃用)
-		│   └── IbeaconInfo.m (已弃用)
-		├── Swift
-		│   └── location-Bridging-Header.h
-		├── Util
-		│   ├── Location.swift (最小二乘法三边定位算法)
-		│   ├── LocationUtil.h (已弃用)
-		│   └── LocationUtil.mm (C++矩阵库编写有冲突已弃用)
-		├── art.scnassets
-		│   ├── arrow.dae (AR需要用到的箭头)
-		│   └── arrow.scn
-		└── main.m
+	├──────	AppDelegate
+	│   	├── AppDelegate.h
+	│  	 	└── AppDelegate.m (配置蜂鸟云地图sdk)
+	├── Assets.xcassets
+	├── Base.lproj
+	├── Controller
+	│   ├── ARViewController.h 
+	│   ├── ARViewController.m (AR场景)
+	│   ├── BRTBeaconScan.h 
+	│   ├── BRTBeaconScan.m (扫描ibeacon并设置每个ibeacon放置的位置 在回调中传参给地图显示定位点)
+	│   ├── BRTViewController.h (已弃用)
+	│   ├── BRTViewController.m (已弃用)
+	│   ├── BeaconViewController.h (已弃用)
+	│   ├── BeaconViewController.mm (已弃用)
+	│   ├── MapViewController.h
+	│   ├── MapViewController.m (提供2D地图的操作)
+	│   ├── ViewController.h (已弃用)
+	│   └── ViewController.m (已弃用)
+	├── Info.plist 
+	├── MapData
+	│   ├── 10347.fmap
+	│   ├── cmbintern.fmap (专门绘制的办公室地图)
+	│   ├── xierqisubway
+	├── Model
+	│   ├── Coordination.h 
+	│   ├── Coordination.m (坐标包装类)
+	│   ├── IbeaconInfo.h (已弃用)
+	│   └── IbeaconInfo.m (已弃用)
+	├── Swift
+	│   └── location-Bridging-Header.h
+	├── Util
+	│   ├── Location.swift (最小二乘法三边定位算法)
+	│   ├── LocationUtil.h (已弃用)
+	│   └── LocationUtil.mm (C++矩阵库编写有冲突已弃用)
+	├── art.scnassets
+	│   ├── arrow.dae (AR需要用到的箭头)
+	│   └── arrow.scn
+	└── main.m
 ```
 
 ### 使用说明
@@ -68,5 +68,5 @@ clone项目用xcode打开
 办公室地图:
 ![办公室](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/office.jpg)
 项目2D效果:
-![png](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png)
-![mp4](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.mp4)
+<div align=center><img width="150" height="150" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/></div>
+![mp4](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif)
