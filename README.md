@@ -20,7 +20,7 @@ AR | ARKit
 ├──location	
 	├── AppDelegate
 	│   ├── AppDelegate.h
-	│  	└── AppDelegate.m (配置蜂鸟云地图sdk)
+	│   ├── AppDelegate.m (配置蜂鸟云sdk)
 	├── Assets.xcassets
 	├── Base.lproj
 	├── Controller
