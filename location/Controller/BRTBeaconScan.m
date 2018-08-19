@@ -88,6 +88,7 @@
     }
     return sum;
 }
+/*设置放置的各个ibeacon的位置*/
 -(void)initProperty{
     _dic=[NSMutableDictionary dictionary];
     [_dic setValue:[[Coordination alloc]initWithX:1.000 andY:4.100 andId:0] forKey:@"10094&13315"];
