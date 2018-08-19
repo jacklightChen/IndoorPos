@@ -14,8 +14,6 @@
 		1058B3E82106B439000FD412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1058B3E72106B439000FD412 /* Assets.xcassets */; };
 		1058B3EB2106B439000FD412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1058B3E92106B439000FD412 /* LaunchScreen.storyboard */; };
 		1058B3EE2106B439000FD412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B3ED2106B439000FD412 /* main.m */; };
-		1058B3F82106B439000FD412 /* locationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B3F72106B439000FD412 /* locationTests.m */; };
-		1058B4032106B439000FD412 /* locationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B4022106B439000FD412 /* locationUITests.m */; };
 		1058B4122106B479000FD412 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058B4112106B479000FD412 /* CoreLocation.framework */; };
 		1058B4192106B4C9000FD412 /* BeaconViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1058B4182106B4C9000FD412 /* BeaconViewController.mm */; };
 		1058B43B21070D41000FD412 /* Coordination.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B43A21070D41000FD412 /* Coordination.m */; };
@@ -288,11 +286,7 @@
 		1058B3EC2106B439000FD412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1058B3ED2106B439000FD412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1058B3F32106B439000FD412 /* locationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1058B3F72106B439000FD412 /* locationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locationTests.m; sourceTree = "<group>"; };
-		1058B3F92106B439000FD412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1058B3FE2106B439000FD412 /* locationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1058B4022106B439000FD412 /* locationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locationUITests.m; sourceTree = "<group>"; };
-		1058B4042106B439000FD412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1058B4112106B479000FD412 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1058B4172106B4C9000FD412 /* BeaconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
 		1058B4182106B4C9000FD412 /* BeaconViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BeaconViewController.mm; sourceTree = "<group>"; };
@@ -645,8 +639,6 @@
 				1034C15D211A772F0060027D /* FMBundle.bundle */,
 				105EBC2221119D1900A1B33E /* BrightSDK */,
 				1058B3DD2106B436000FD412 /* location */,
-				1058B3F62106B439000FD412 /* locationTests */,
-				1058B4012106B439000FD412 /* locationUITests */,
 				1058B3DC2106B436000FD412 /* Products */,
 				1058B4102106B479000FD412 /* Frameworks */,
 			);
@@ -679,24 +671,6 @@
 				1058B3ED2106B439000FD412 /* main.m */,
 			);
 			path = location;
-			sourceTree = "<group>";
-		};
-		1058B3F62106B439000FD412 /* locationTests */ = {
-			isa = PBXGroup;
-			children = (
-				1058B3F72106B439000FD412 /* locationTests.m */,
-				1058B3F92106B439000FD412 /* Info.plist */,
-			);
-			path = locationTests;
-			sourceTree = "<group>";
-		};
-		1058B4012106B439000FD412 /* locationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1058B4022106B439000FD412 /* locationUITests.m */,
-				1058B4042106B439000FD412 /* Info.plist */,
-			);
-			path = locationUITests;
 			sourceTree = "<group>";
 		};
 		1058B4102106B479000FD412 /* Frameworks */ = {
@@ -1155,7 +1129,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1058B3F82106B439000FD412 /* locationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,7 +1136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1058B4032106B439000FD412 /* locationUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
