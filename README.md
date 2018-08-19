@@ -18,9 +18,9 @@ AR | ARKit
 ├──FMMapKit (蜂鸟云地图sdk）
 ├──location.xcodeproj
 ├──location	
-	├──────	AppDelegate
-	│   	├── AppDelegate.h
-	│  	 	└── AppDelegate.m (配置蜂鸟云地图sdk)
+	├── AppDelegate
+	│   ├── AppDelegate.h
+	│  	└── AppDelegate.m (配置蜂鸟云地图sdk)
 	├── Assets.xcassets
 	├── Base.lproj
 	├── Controller
@@ -68,5 +68,5 @@ clone项目用xcode打开
 办公室地图:
 ![办公室](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/office.jpg)
 项目2D效果:
-<div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/></div>
-![img](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif)
+<div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/>
+<img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif"/></div>
