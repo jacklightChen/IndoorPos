@@ -69,4 +69,4 @@ clone项目用xcode打开
 ![办公室](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/office.jpg)
 项目2D效果:
 <div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/></div>
-![mp4](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.png?raw=true)
+![img](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif)
