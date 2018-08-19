@@ -6,12 +6,13 @@
 ... | ... 
 :---:|:---
 语言|Objective-C swift
-扫描ibeacon | brightSDK[brightSDK](https://github.com/BrightBeacon/BrightBeacon_iOS_SDK)
-定位 | 最小二乘法三点定位 [参考论文](http://www.docin.com/p-813893113.html)
-地图 | 蜂鸟云地图sdk[fengmap](https://www.fengmap.com/develop-ios-guide.html)
+扫描ibeacon | [brightSDK](https://github.com/BrightBeacon/BrightBeacon_iOS_SDK)
+定位 | [最小二乘法三点定位](http://www.docin.com/p-813893113.html)
+地图 | [蜂鸟云地图sdk](https://www.fengmap.com/develop-ios-guide.html)
 AR | ARKit
 
 ### 项目结构
+```
 ├──BrightSDK (智石科技扫描蓝牙sdk)
 ├──FMBundle.bundle (蜂鸟云地图的资源包)
 ├──FMMapKit (蜂鸟云地图sdk）
@@ -55,7 +56,8 @@ AR | ARKit
 		│   ├── arrow.dae (AR需要用到的箭头)
 		│   └── arrow.scn
 		└── main.m
-	
+```
+
 ### 使用说明
 clone项目用xcode打开 
 需要先按步骤接入fengmap:https://www.fengmap.com/develop-ios-guide.html
