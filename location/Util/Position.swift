@@ -1,16 +1,16 @@
 //
-//  Location.swift
+//  PositionUtil.swift
 //  location
 //
-//  Created by 陈之豪 on 2018/8/7.
+//  Created by 陈之豪 on 2018/8/20.
 //  Copyright © 2018年 陈之豪. All rights reserved.
 //
 
 import Foundation
 import Accelerate
 
-class LocationUtilSwift:NSObject{
-    func getLocation(infos:NSMutableArray) -> Coordination {
+class PositionUtilSwift:NSObject{
+    func calPosition (infos:NSMutableArray) -> Coordination {
         let result=Coordination();
         if infos.count<=2 {
             return result
@@ -44,7 +44,7 @@ class LocationUtilSwift:NSObject{
         /*temp 2行2列*/
         var temp = [Double](repeating : 0.0, count : 4)
         vDSP_mmulD(leftT, 1, left, 1, &temp, 1, 2, 2, vDSP_Length(n))
-     
+        
         /*按公式计算
          * (A^T*A)^(-1)*A^T*B=X
          * temp2 2行n列

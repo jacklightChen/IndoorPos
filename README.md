@@ -20,14 +20,14 @@ AR | ARKit
 ├──location	
 	├── AppDelegate
 	│   ├── AppDelegate.h
-	│   ├── AppDelegate.m (配置蜂鸟云sdk)
+	│   ├── AppDelegate.m (配置蜂鸟云appkey)
 	├── Assets.xcassets
 	├── Base.lproj
 	├── Controller
 	│   ├── ARViewController.h 
 	│   ├── ARViewController.m (AR场景)
 	│   ├── BRTBeaconScan.h 
-	│   ├── BRTBeaconScan.m (扫描ibeacon并设置每个ibeacon放置的位置 在回调中传参给地图显示定位点)
+	│   ├── BRTBeaconScan.m (扫描ibeacon并设置每个ibeacon放置的位置 在回调中保存全局定位点)
 	│   ├── BRTViewController.h (已弃用)
 	│   ├── BRTViewController.m (已弃用)
 	│   ├── BeaconViewController.h (已弃用)

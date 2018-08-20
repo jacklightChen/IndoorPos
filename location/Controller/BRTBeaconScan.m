@@ -59,9 +59,8 @@
         }
     }
     if(array.count>=3){
-        LocationUtilSwift *luc=[[LocationUtilSwift alloc]init];
-        
-        Coordination *t=[luc getLocationWithInfos:array];
+        PositionUtilSwift *pos=[[PositionUtilSwift alloc]init];
+         Coordination *t=[pos calPositionWithInfos:array];
         t.x+=13544230.0;
         t.y+=3665143.5;
         curx=t.x;

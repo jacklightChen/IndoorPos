@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1034C15E211A772F0060027D /* FMBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1034C15D211A772F0060027D /* FMBundle.bundle */; };
+		10538BD4212A52EE00AC3994 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10538BD3212A52EE00AC3994 /* Position.swift */; };
 		1058B3E02106B436000FD412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B3DF2106B436000FD412 /* AppDelegate.m */; };
 		1058B3E32106B436000FD412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B3E22106B436000FD412 /* ViewController.m */; };
 		1058B3E62106B436000FD412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1058B3E42106B436000FD412 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		105EBE672117ED6300A1B33E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBE662117ED6300A1B33E /* OpenGLES.framework */; };
 		105EBE692117ED6E00A1B33E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBE682117ED6E00A1B33E /* GLKit.framework */; };
 		105EBE6B2117ED7400A1B33E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBE6A2117ED7400A1B33E /* Security.framework */; };
-		1075942F211929E000315B7B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075942E211929E000315B7B /* Location.swift */; };
 		107FB4E8211BD9AF00098708 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FB4E7211BD9AF00098708 /* ARViewController.m */; };
 		107FCF58211A7FF5003FBCC1 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 107FCF57211A7FF5003FBCC1 /* libz.1.tbd */; };
 		107FCF5D211A847C003FBCC1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FCF5C211A847C003FBCC1 /* MapViewController.m */; };
@@ -275,6 +275,7 @@
 		1034C1E2211A77380060027D /* FMKGroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKGroundLayer.h; sourceTree = "<group>"; };
 		1034C1E3211A77380060027D /* FMKNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKNavigation.h; sourceTree = "<group>"; };
 		1034C1E4211A77380060027D /* libFMMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFMMapKit.a; sourceTree = "<group>"; };
+		10538BD3212A52EE00AC3994 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		1058B3DB2106B436000FD412 /* location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = location.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1058B3DE2106B436000FD412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1058B3DF2106B436000FD412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -309,7 +310,6 @@
 		105EBE682117ED6E00A1B33E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		105EBE6A2117ED7400A1B33E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1075942D211929E000315B7B /* location-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "location-Bridging-Header.h"; sourceTree = "<group>"; };
-		1075942E211929E000315B7B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		107FB4E6211BD9AF00098708 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		107FB4E7211BD9AF00098708 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		107FCF57211A7FF5003FBCC1 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
@@ -753,7 +753,7 @@
 			children = (
 				105EBC3B2112B22600A1B33E /* LocationUtil.h */,
 				105EBC3C2112B22600A1B33E /* LocationUtil.mm */,
-				1075942E211929E000315B7B /* Location.swift */,
+				10538BD3212A52EE00AC3994 /* Position.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1110,9 +1110,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10538BD4212A52EE00AC3994 /* Position.swift in Sources */,
 				105EBC3D2112B22600A1B33E /* LocationUtil.mm in Sources */,
 				10FBE351211158D0005646F1 /* BRTViewController.m in Sources */,
-				1075942F211929E000315B7B /* Location.swift in Sources */,
 				1058B4192106B4C9000FD412 /* BeaconViewController.mm in Sources */,
 				1058B3E32106B436000FD412 /* ViewController.m in Sources */,
 				1058B3EE2106B439000FD412 /* main.m in Sources */,
