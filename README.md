@@ -59,7 +59,9 @@ AR | ARKit
 ```
 
 ### 使用说明
-clone项目用xcode打开 
+clone项目
+在console中执行pod install
+打开xcode用location.xcworkspace打开项目
 需要先按步骤接入fengmap(引入几个系统静态库):https://www.fengmap.com/develop-ios-guide-environment.html
 
 ### 项目展示
