@@ -26,7 +26,7 @@ static double cury;
 @property(assign,nonatomic)int sumTime;
 
 /*向地图传参*/
-@property(strong,nonatomic)MapViewController *map;
+@property(strong,nonatomic) MapViewController *map;
 - (void)start:(MapViewController *)map;
 + (double)getCurX;
 + (double)getCurY;

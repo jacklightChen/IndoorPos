@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <ARKit/ARKit.h>
 #import <SceneKit/SceneKit.h>
+#import "MapViewController.h"
 
 @interface ARViewController : UIViewController
 
+@property (nonatomic,strong) MapViewController *map;
+@property (nonatomic,assign) BOOL flag;
 @end

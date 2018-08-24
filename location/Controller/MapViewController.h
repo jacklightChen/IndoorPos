@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NaviResult.h"
+
 
 @interface MapViewController : UIViewController
 -(void)showPointWithX:(double)x andY:(double)y;
+-(NaviResult *)getNavi;
 @end

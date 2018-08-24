@@ -60,13 +60,13 @@ AR | ARKit
 
 ### 使用说明
 clone项目用xcode打开 
-需要先按步骤接入fengmap:https://www.fengmap.com/develop-ios-guide.html
+需要先按步骤接入fengmap(引入几个系统静态库):https://www.fengmap.com/develop-ios-guide-environment.html
 
 ### 项目展示
 只有三个ibeacon时的定位demo:
 ![定位](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/point.png)
 办公室地图:
 ![办公室](https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/office.jpg)
-项目2D效果:
+项目2D效果 左图片右gif:
 <div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/>
 <img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif"/></div>

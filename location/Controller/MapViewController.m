@@ -24,11 +24,9 @@
     
     FMKGeoCoord _startCoord;
     FMKGeoCoord _endCoord;
+    
     /// 定位标注
     FMKLocationMarker *_locationMarker;
-    
-    /*ar中需要的点集合*/
-    NSMutableArray *array;
 }
 @end
 
@@ -55,6 +53,7 @@
 
     _imageLayer = [[FMKImageLayer alloc] initWithGroupID:@"1"];
     [_mapView.map addLayer:_imageLayer];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +65,9 @@
 - (void)mapViewDidFinishLoadingMap:(FMKMapView *)mapView {
     NSLog(@"地图加载完成");
     _isFinishLoadingMap = YES;
+//    [SVProgressHUD showWithStatus:@"识别中"];
+//    [SVProgressHUD showSuccessWithStatus:@"识别成功 开始导航!"];
+    
 }
 - (void)mapViewDidFailLoadingMap:(FMKMapView *)mapView withError:(NSError *)error {
     NSLog(@"地图加载失败-%@", error);
@@ -75,9 +77,7 @@
     FMKGeoCoord coord = [_mapView coverPoint:point];
     double curx=[BRTBeaconScan getCurX];
     double cury=[BRTBeaconScan getCurY];
-    /*test case*/
-//    curx=13544226.9769;
-//    cury=3665146.3719;
+    
     FMKGeoCoord start = FMKGeoCoordMake(1, FMKMapPointMake(curx, cury));
     if(curx==0&&cury==0){start = [_mapView coverPoint:point];}
     // 可以根据 coord.mapPoint.x == 0 && coord.mapPoint.y == 0 判断触摸点是否在地图上
@@ -114,10 +114,14 @@
 }
 
 #pragma mark - 路径规划
-/// 路径规划
-- (void)naviRouteAnalyserWithStart:(FMKGeoCoord)start end:(FMKGeoCoord)end {
-    // result:保存路径规划得到的点
+/// 路径规划 并返回路径的长度
+- (NaviResult *)naviRouteAnalyserWithStart:(FMKGeoCoord)start end:(FMKGeoCoord)end {
     NSMutableArray *result = [NSMutableArray array];
+    // sumDis:路径总长度
+    double sumDis=0;
+    //返回的包装类
+    NaviResult *navi=[[NaviResult alloc]init];
+    
     // 路径分析类型设置
     FMKRouteSetting routeSetting;
     routeSetting.naviModule = MODULE_BEST;
@@ -125,12 +129,14 @@
     // 进行路径计算分析
     FMKRouteCalculateResultType type = [_naviAnalyser analyseRouteWithStartCoord:start end:end type:routeSetting routeResult:&result];
     //若分析结果不成功，直接返回
+    
+    // array:保存路径规划得到的点
+    NSMutableArray *array=[[NSMutableArray alloc]init];
     switch (type) {
         case IROUTE_SUCCESS: {
             // 初始化线标注
             FMKLineMarker *line = [[FMKLineMarker alloc] init];
             /*传递点集在SceneKit中放置箭头*/
-            array=[NSMutableArray array];
             for (FMKNaviResult *navi in result) {
                 for(NSValue *value in navi.pointArray){
                     FMKMapPoint point;
@@ -144,6 +150,8 @@
                 FMKSegment *segment = [[FMKSegment alloc] initWithGroupID:navi.groupID pointArray:navi.pointArray];
                 //在直线中添加segment
                 [line addSegment:segment];
+                //计算路径总长度
+                sumDis+=segment.length;
             }
             line.width=1;
             [_mapView.map.lineLayer addMarker:line];
@@ -152,7 +160,9 @@
         default:
             break;
     }
-    
+    navi.sumDis=sumDis;
+    navi.array=array;
+    return navi;
 }
 
 -(void)showPointWithX:(double)x andY:(double)y{
@@ -175,14 +185,22 @@
     
 }
 
+/*获得离终点的距离*/
+-(NaviResult *)getNavi{
+    FMKGeoCoord start = FMKGeoCoordMake(1, FMKMapPointMake(curx, cury));
+    return [self naviRouteAnalyserWithStart:start end:_endCoord];
+}
+
 /*button*/
 - (IBAction)unwindSegue:(UIStoryboardSegue *)sender{
     NSLog(@"unwindSegue %@", sender);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    id page2 = segue.destinationViewController;
-    // 对page2中的变量设置值
-    [page2 setValue:self->array forKey:@"route"];
+    if([segue.identifier isEqualToString:@"sendValue"]){
+        ARViewController* page2 = segue.destinationViewController;
+        // 对page2中的变量设置值
+        [page2 setMap:self];
+    }
 }
 @end

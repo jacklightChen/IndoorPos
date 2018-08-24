@@ -8,21 +8,27 @@
 
 #import "ARViewController.h"
 #import "Coordination.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface ARViewController () <ARSCNViewDelegate>
-
 @property (nonatomic, strong) IBOutlet ARSCNView *sceneView;
-@property (weak, nonatomic) NSMutableArray *route;
-
 @end
 
 @implementation ARViewController
+@synthesize map;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showRoute:_route];
+    /*路径只用到一次*/
+//    NaviResult *res=[map getNavi];
+    [self showbar];
+    
 }
-
+-(void)showbar{
+    [SVProgressHUD setBackgroundColor:[UIColor orangeColor]];
+    [SVProgressHUD showErrorWithStatus:@"test"];
+    [SVProgressHUD dismissWithDelay:5];
+}
 -(void)showRoute:(NSMutableArray *)array{
     SCNScene *scene=[SCNScene new];
     SCNScene *arrow=[SCNScene sceneNamed:@"art.scnassets/arrow.scn"];
@@ -51,7 +57,8 @@
           [SCNAction rotateByX:0 y:-angle z:0 duration:0] count:1]];
     }
     
-    self.sceneView.scene=scene;
+    _sceneView.scene=scene;
+    _sceneView.delegate=self;
 }
 
 -(void)initForward:(SCNNode *)node{
@@ -83,17 +90,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    ARWorldTrackingConfiguration *config=[ARWorldTrackingConfiguration new];
-    
-    /*ARSession需要先配置configuratoin*/
-    [self.sceneView.session runWithConfiguration:config];
-}
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    flag=NO;
+//    ARWorldTrackingConfiguration *config=[ARWorldTrackingConfiguration new];
+//    NSSet<ARReferenceImage *> *image=[ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
+//
+//    config.detectionImages=image;
+//
+//    /*ARSession需要先配置configuratoin*/
+//    [self.sceneView.session runWithConfiguration:config];
+//
+//}
 
-/*button*/
-- (IBAction)prepareForSegue:(UIStoryboardSegue *)segue{
-    NSLog(@"%@",segue.sourceViewController);
+-(void)renderer:(id<SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor{
+    if(!_flag){
+        /*重新开启session*/
+        /*并放置物体*/
+
+    }
 }
 
 @end

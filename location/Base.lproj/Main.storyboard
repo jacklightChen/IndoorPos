@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtQ-2W-K3f">
-                                <rect key="frame" x="156" y="279" width="63" height="46"/>
+                                <rect key="frame" x="155.7703257334947" y="312.24565645302846" width="62.999999999999773" height="46.000000000000227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="开始导航"/>
                                 <connections>
@@ -47,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="切换AR"/>
                                 <connections>
-                                    <segue destination="pDz-di-0hk" kind="show" id="jzL-Hm-8OH"/>
+                                    <segue destination="pDz-di-0hk" kind="show" identifier="sendValue" id="g2X-Ji-Ids"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +64,7 @@
         <!--View Controller-->
         <scene sceneID="gEi-83-amx">
             <objects>
-                <viewController id="pDz-di-0hk" customClass="ARViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARViewController" id="pDz-di-0hk" customClass="ARViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YY3-XT-hoK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
