@@ -67,8 +67,8 @@ AR | ARKit
 项目2D效果 左图片右gif:
 <div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/>
 <img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif"/></div>
-项目AR效果:
-<iframe width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/ardemo.gif"></iframe>
+项目AR效果(文件大小约70M):
+<img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/ardemo.gif"/></div>
 
 ### 具体流程
 首先部署ibeacon 录入在自定义坐标系中的绝对位置
