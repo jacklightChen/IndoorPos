@@ -11,6 +11,7 @@
 
 
 @interface MapViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 -(void)showPointWithX:(double)x andY:(double)y;
 -(NaviResult *)getNavi;
 @end

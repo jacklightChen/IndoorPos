@@ -10,6 +10,8 @@
 #import <ARKit/ARKit.h>
 #import <SceneKit/SceneKit.h>
 #import "MapViewController.h"
+#import "SVProgressHUD.h"
+#import "NaviResult.h"
 
 @interface ARViewController : UIViewController
 

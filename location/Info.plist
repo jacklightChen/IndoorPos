@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For AR Usage</string>
+	<key>NSCameraUsageDescription</key>
+	<string>For AR Usage</string>
 	<key>MGLIdeographicFontFamilyName</key>
 	<string>PingFang</string>
 	<key>NSLocationAlwaysUsageDescription</key>

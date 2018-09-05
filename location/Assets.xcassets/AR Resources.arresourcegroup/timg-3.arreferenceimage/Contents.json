@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1234-01-1.png"
+      "filename" : "timg-3.jpeg"
     }
   ],
   "info" : {
@@ -10,6 +10,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 0
+    "width" : 0.23999999999999999
   }
 }

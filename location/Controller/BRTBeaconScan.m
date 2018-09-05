@@ -11,8 +11,8 @@
 
 @implementation BRTBeaconScan
 
-/*需要扫描一系列ibeacon的UUID
- *智石科技sdk可传一系列ibaecon的UUID数组
+/* 需要扫描一系列ibeacon的UUID
+ * 智石科技sdk可传一系列ibaecon的UUID数组
  */
 #define MY_UUID @"E2C56DB5-DFFB-48D2-B060-d0f5a71096e0"
 #define MY_REGION_IDENTIFIER @"cmb"
@@ -27,7 +27,7 @@
 -(void)startBeaconRanging{
     [BRTBeaconSDK setInvalidTime:1];
     [BRTBeaconSDK setScanResponseTime:1];
-    /*每隔一秒扫描得到BRTBeacon的回调函数*/
+    /* 每隔一秒扫描得到BRTBeacon的回调函数*/
     [BRTBeaconSDK scanBleServices:nil onCompletion:^(NSArray *beacons, NSError *error){
 //        for(BRTBeacon * beacon in beacons){
 //            NSLog(@"%@ %@ %d %f",beacon.major,beacon.minor,beacon.rssi,beacon.distance.floatValue);
@@ -36,6 +36,10 @@
     }];
 }
 
+/* 解析接收到的ibeacon信息 并过滤有效值后
+ * 因为人是走的 这边略微做了一点处理
+ * 然后把定位得到的坐标在地图中显示
+ **/
 -(NSMutableArray *)processBeaconInfo:(NSArray *)beacons{
     NSMutableArray * array=[NSMutableArray array];
     for(BRTBeacon * beacon in beacons){
@@ -58,11 +62,13 @@
             [array addObject:temp];
         }
     }
+    /* 大于三点进行定位算法*/
     if(array.count>=3){
         PositionUtilSwift *pos=[[PositionUtilSwift alloc]init];
          Coordination *t=[pos calPositionWithInfos:array];
-        t.x+=13544230.0;
-        t.y+=3665143.5;
+        /*fengmap的地图偏移值*/
+        t.x+=13544230.0271;
+        t.y+=3665146.9586;
         curx=t.x;
         cury=t.y;
         [_map showPointWithX:t.x andY:t.y];
@@ -87,12 +93,12 @@
     }
     return sum;
 }
-/*设置放置的各个ibeacon的位置*/
+/* 设置放置的各个ibeacon的位置*/
 -(void)initProperty{
     _dic=[NSMutableDictionary dictionary];
-    [_dic setValue:[[Coordination alloc]initWithX:1.000 andY:4.100 andId:0] forKey:@"10094&13315"];
-    [_dic setValue:[[Coordination alloc]initWithX:2.200 andY:4.100 andId:1] forKey:@"10094&13431"];
-    [_dic setValue:[[Coordination alloc]initWithX:1.600 andY:3.100 andId:2] forKey:@"123&123"];
+    [_dic setValue:[[Coordination alloc]initWithX:0.940 andY:-1.400 andId:0] forKey:@"10094&13315"];
+    [_dic setValue:[[Coordination alloc]initWithX:0.940 andY:-2.600 andId:1] forKey:@"10094&13431"];
+    [_dic setValue:[[Coordination alloc]initWithX:1.440 andY:-2.000 andId:2] forKey:@"123&123"];
     _distanceInfo=[NSMutableArray array];
     for(int i=0;i<25;i++){
         [_distanceInfo addObject:[NSMutableArray array]];

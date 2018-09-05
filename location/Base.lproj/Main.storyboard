@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="II5-Gx-C2r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,12 +15,11 @@
             <objects>
                 <viewController id="II5-Gx-C2r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BqB-B2-T00">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtQ-2W-K3f">
-                                <rect key="frame" x="155.7703257334947" y="312.24565645302846" width="62.999999999999773" height="46.000000000000227"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtQ-2W-K3f">
+                                <rect key="frame" x="156.66666666666666" y="391" width="62" height="30"/>
                                 <state key="normal" title="开始导航"/>
                                 <connections>
                                     <segue destination="bAQ-94-JA4" kind="show" id="UyC-Xd-aCm"/>
@@ -28,6 +27,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KtQ-2W-K3f" firstAttribute="centerX" secondItem="BqB-B2-T00" secondAttribute="centerX" id="oT0-CY-yDh"/>
+                            <constraint firstItem="KtQ-2W-K3f" firstAttribute="centerY" secondItem="BqB-B2-T00" secondAttribute="centerY" id="rlj-GZ-Sav"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3fw-Fh-opE"/>
                     </view>
                 </viewController>
@@ -40,24 +43,33 @@
             <objects>
                 <viewController id="bAQ-94-JA4" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pxN-Wm-bez">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9k-G2-bbX">
-                                <rect key="frame" x="297" y="38" width="62" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PXm-f9-We1">
+                                <rect key="frame" x="297" y="38" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9k-G2-bbX">
+                                <rect key="frame" x="324" y="54" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES"/>
+                                </accessibility>
                                 <state key="normal" title="切换AR"/>
                                 <connections>
-                                    <segue destination="pDz-di-0hk" kind="show" identifier="sendValue" id="g2X-Ji-Ids"/>
+                                    <segue destination="pDz-di-0hk" kind="show" identifier="sendValue" id="H7E-st-ss5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0oF-vf-uUH"/>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="A9k-G2-bbX" id="Okv-gV-3rD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6x-vg-Z2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="hY8-eT-iP7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-39.200000000000003" y="-1077.2113943028487"/>
         </scene>
@@ -65,22 +77,26 @@
         <scene sceneID="gEi-83-amx">
             <objects>
                 <viewController storyboardIdentifier="ARViewController" id="pDz-di-0hk" customClass="ARViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YY3-XT-hoK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="YY3-XT-hoK" customClass="ARSCNView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn9-fO-yLV">
-                                <rect key="frame" x="311" y="20" width="51" height="88"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-Ec-ENH">
+                                <rect key="frame" x="123" y="98" width="150" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="返回2D"/>
-                                <connections>
-                                    <segue destination="hY8-eT-iP7" kind="unwind" unwindAction="unwindSegue:" id="mHY-yk-6QP"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="距离测算中"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="eDK-ON-ykv"/>
+                        <viewLayoutGuide key="safeArea" id="7Th-N0-WYS"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Ael-Ec-ENH" id="oKo-qd-5p7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdD-FP-qTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

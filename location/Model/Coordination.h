@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/*ibeacon坐标 identifier 标识为是哪一个ibeacon*/
 @interface Coordination : NSObject
     @property (nonatomic,assign)   double x;
     @property (nonatomic,assign)   double y;

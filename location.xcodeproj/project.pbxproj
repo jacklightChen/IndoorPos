@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1034C15E211A772F0060027D /* FMBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1034C15D211A772F0060027D /* FMBundle.bundle */; };
+		1037DF652133F01000D7098D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1037DF642133F01000D7098D /* art.scnassets */; };
 		10538BD4212A52EE00AC3994 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10538BD3212A52EE00AC3994 /* Position.swift */; };
 		1058B3E02106B436000FD412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058B3DF2106B436000FD412 /* AppDelegate.m */; };
 		1058B3E62106B436000FD412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1058B3E42106B436000FD412 /* Main.storyboard */; };
@@ -120,11 +121,14 @@
 		10974BF4210ACD29005B7F38 /* IbeaconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10974BF3210ACD29005B7F38 /* IbeaconInfo.m */; };
 		10B5EF88212FA5E8006D8EFA /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5EF87212FA5E8006D8EFA /* ARViewController.m */; };
 		10B5EF8B212FD0EB006D8EFA /* NaviResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5EF8A212FD0EB006D8EFA /* NaviResult.m */; };
+		10B5EF97212FF35F006D8EFA /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5EF8D212FF35F006D8EFA /* SVRadialGradientLayer.m */; };
+		10B5EF98212FF35F006D8EFA /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5EF90212FF35F006D8EFA /* SVProgressAnimatedView.m */; };
+		10B5EF99212FF35F006D8EFA /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5EF93212FF35F006D8EFA /* SVProgressHUD.m */; };
+		10B5EF9A212FF35F006D8EFA /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5EF94212FF35F006D8EFA /* SVIndefiniteAnimatedView.m */; };
+		10B5EF9B212FF35F006D8EFA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10B5EF95212FF35F006D8EFA /* SVProgressHUD.bundle */; };
+		10B5EF9D212FF6D2006D8EFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B5EF9C212FF6D2006D8EFA /* QuartzCore.framework */; };
 		10D30D25211A8DC900A5775D /* libBrightSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBC2321119D1900A1B33E /* libBrightSDK.a */; };
 		10D30D26211A8DCD00A5775D /* libFMMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034C1A1211A77380060027D /* libFMMapKit.a */; };
-		10E27163212548DD0054BA5D /* arrow.dae in Resources */ = {isa = PBXBuildFile; fileRef = 10E27162212548DD0054BA5D /* arrow.dae */; };
-		10E27166212549600054BA5D /* arrow.scn in Resources */ = {isa = PBXBuildFile; fileRef = 10E27165212549600054BA5D /* arrow.scn */; };
-		3291273BC8EDB99B29459DF7 /* Pods_location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9294CAA72D91B73A22145B2A /* Pods_location.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +278,7 @@
 		1034C1E2211A77380060027D /* FMKGroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKGroundLayer.h; sourceTree = "<group>"; };
 		1034C1E3211A77380060027D /* FMKNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKNavigation.h; sourceTree = "<group>"; };
 		1034C1E4211A77380060027D /* libFMMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFMMapKit.a; sourceTree = "<group>"; };
+		1037DF642133F01000D7098D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		10538BD3212A52EE00AC3994 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		1058B3DB2106B436000FD412 /* location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = location.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1058B3DE2106B436000FD412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -407,11 +412,17 @@
 		10B5EF87212FA5E8006D8EFA /* ARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		10B5EF89212FD0EB006D8EFA /* NaviResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaviResult.h; sourceTree = "<group>"; };
 		10B5EF8A212FD0EB006D8EFA /* NaviResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaviResult.m; sourceTree = "<group>"; };
-		10E27162212548DD0054BA5D /* arrow.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = arrow.dae; sourceTree = "<group>"; };
-		10E27165212549600054BA5D /* arrow.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = arrow.scn; sourceTree = "<group>"; };
-		4990C00CA88C5DC115A8EC60 /* Pods-location.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location/Pods-location.debug.xcconfig"; sourceTree = "<group>"; };
-		9294CAA72D91B73A22145B2A /* Pods_location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3160BDB8880D66705C6A69D /* Pods-location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location.release.xcconfig"; path = "Pods/Target Support Files/Pods-location/Pods-location.release.xcconfig"; sourceTree = "<group>"; };
+		10B5EF8D212FF35F006D8EFA /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		10B5EF8E212FF35F006D8EFA /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		10B5EF8F212FF35F006D8EFA /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		10B5EF90212FF35F006D8EFA /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		10B5EF91212FF35F006D8EFA /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		10B5EF92212FF35F006D8EFA /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		10B5EF93212FF35F006D8EFA /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		10B5EF94212FF35F006D8EFA /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		10B5EF95212FF35F006D8EFA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		10B5EF96212FF35F006D8EFA /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		10B5EF9C212FF6D2006D8EFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +430,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B5EF9D212FF6D2006D8EFA /* QuartzCore.framework in Frameworks */,
 				105EBE6B2117ED7400A1B33E /* Security.framework in Frameworks */,
 				105EBE692117ED6E00A1B33E /* GLKit.framework in Frameworks */,
 				107FCF58211A7FF5003FBCC1 /* libz.1.tbd in Frameworks */,
@@ -427,7 +439,6 @@
 				1058B4122106B479000FD412 /* CoreLocation.framework in Frameworks */,
 				10D30D26211A8DCD00A5775D /* libFMMapKit.a in Frameworks */,
 				10D30D25211A8DC900A5775D /* libBrightSDK.a in Frameworks */,
-				3291273BC8EDB99B29459DF7 /* Pods_location.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,13 +645,13 @@
 		1058B3D22106B436000FD412 = {
 			isa = PBXGroup;
 			children = (
+				10B5EF8C212FF35F006D8EFA /* SVProgressHUD */,
 				1034C1E7211A79B50060027D /* FMMapKit */,
 				1034C15D211A772F0060027D /* FMBundle.bundle */,
 				105EBC2221119D1900A1B33E /* BrightSDK */,
 				1058B3DD2106B436000FD412 /* location */,
 				1058B3DC2106B436000FD412 /* Products */,
 				1058B4102106B479000FD412 /* Frameworks */,
-				67A3ABE99C2BE15AD4D841EC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -657,7 +668,7 @@
 		1058B3DD2106B436000FD412 /* location */ = {
 			isa = PBXGroup;
 			children = (
-				10E27161212548AD0054BA5D /* art.scnassets */,
+				1037DF642133F01000D7098D /* art.scnassets */,
 				107FCF5E211A85A1003FBCC1 /* MapData */,
 				1075942C211928D400315B7B /* Swift */,
 				1075942B211928CE00315B7B /* Util */,
@@ -676,13 +687,13 @@
 		1058B4102106B479000FD412 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10B5EF9C212FF6D2006D8EFA /* QuartzCore.framework */,
 				107FCF57211A7FF5003FBCC1 /* libz.1.tbd */,
 				105EBE6A2117ED7400A1B33E /* Security.framework */,
 				105EBE682117ED6E00A1B33E /* GLKit.framework */,
 				105EBE662117ED6300A1B33E /* OpenGLES.framework */,
 				105EBE642117ED5C00A1B33E /* CoreGraphics.framework */,
 				1058B4112106B479000FD412 /* CoreLocation.framework */,
-				9294CAA72D91B73A22145B2A /* Pods_location.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -871,22 +882,21 @@
 			path = xierqisubway;
 			sourceTree = "<group>";
 		};
-		10E27161212548AD0054BA5D /* art.scnassets */ = {
+		10B5EF8C212FF35F006D8EFA /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				10E27165212549600054BA5D /* arrow.scn */,
-				10E27162212548DD0054BA5D /* arrow.dae */,
+				10B5EF8D212FF35F006D8EFA /* SVRadialGradientLayer.m */,
+				10B5EF8E212FF35F006D8EFA /* SVIndefiniteAnimatedView.h */,
+				10B5EF8F212FF35F006D8EFA /* SVProgressHUD.h */,
+				10B5EF90212FF35F006D8EFA /* SVProgressAnimatedView.m */,
+				10B5EF91212FF35F006D8EFA /* SVProgressHUD-Prefix.pch */,
+				10B5EF92212FF35F006D8EFA /* SVRadialGradientLayer.h */,
+				10B5EF93212FF35F006D8EFA /* SVProgressHUD.m */,
+				10B5EF94212FF35F006D8EFA /* SVIndefiniteAnimatedView.m */,
+				10B5EF95212FF35F006D8EFA /* SVProgressHUD.bundle */,
+				10B5EF96212FF35F006D8EFA /* SVProgressAnimatedView.h */,
 			);
-			path = art.scnassets;
-			sourceTree = "<group>";
-		};
-		67A3ABE99C2BE15AD4D841EC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4990C00CA88C5DC115A8EC60 /* Pods-location.debug.xcconfig */,
-				D3160BDB8880D66705C6A69D /* Pods-location.release.xcconfig */,
-			);
-			name = Pods;
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -896,11 +906,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1058B4072106B439000FD412 /* Build configuration list for PBXNativeTarget "location" */;
 			buildPhases = (
-				C758A06EED5E36046AA23B2F /* [CP] Check Pods Manifest.lock */,
 				1058B3D72106B436000FD412 /* Sources */,
 				1058B3D82106B436000FD412 /* Frameworks */,
 				1058B3D92106B436000FD412 /* Resources */,
-				3AF38B785C69B6C0E0901574 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1008,7 +1016,6 @@
 				107FCFDB211A85A1003FBCC1 /* 160007.fmi in Resources */,
 				107FCFF4211A85A1003FBCC1 /* 120002.fmi in Resources */,
 				107FD004211A85A1003FBCC1 /* 180005.fmi in Resources */,
-				10E27166212549600054BA5D /* arrow.scn in Resources */,
 				107FCFC1211A85A1003FBCC1 /* 140001.fmi in Resources */,
 				107FCFC0211A85A1003FBCC1 /* lvyousheshi.fmi in Resources */,
 				107FD002211A85A1003FBCC1 /* 140023.fmi in Resources */,
@@ -1062,6 +1069,7 @@
 				107FCFC5211A85A1003FBCC1 /* 150012.fmi in Resources */,
 				107FCFEE211A85A1003FBCC1 /* 120004.fmi in Resources */,
 				1058B3E82106B439000FD412 /* Assets.xcassets in Resources */,
+				1037DF652133F01000D7098D /* art.scnassets in Resources */,
 				107FCFE6211A85A1003FBCC1 /* 170006.fmi in Resources */,
 				107FD011211A85A1003FBCC1 /* 100004.fmi in Resources */,
 				107FD007211A85A1003FBCC1 /* 110002.fmi in Resources */,
@@ -1083,7 +1091,6 @@
 				107FD009211A85A1003FBCC1 /* 100006.fmi in Resources */,
 				107FCFF8211A85A1003FBCC1 /* 140009.fmi in Resources */,
 				107FCFEC211A85A1003FBCC1 /* 130003.fmi in Resources */,
-				10E27163212548DD0054BA5D /* arrow.dae in Resources */,
 				107FCFF5211A85A1003FBCC1 /* 120003.fmi in Resources */,
 				107FCFED211A85A1003FBCC1 /* 130001.fmi in Resources */,
 				1058B3E62106B436000FD412 /* Main.storyboard in Resources */,
@@ -1094,6 +1101,7 @@
 				107FD016211A85A1003FBCC1 /* xierqisubway.fmap in Resources */,
 				107FCFDA211A85A1003FBCC1 /* 160006.fmi in Resources */,
 				107FD019211A88D2003FBCC1 /* cmbintern.fmap in Resources */,
+				10B5EF9B212FF35F006D8EFA /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1113,49 +1121,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3AF38B785C69B6C0E0901574 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-location/Pods-location-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Chrysan/Chrysan.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chrysan.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-location/Pods-location-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C758A06EED5E36046AA23B2F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-location-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1058B3D72106B436000FD412 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1166,11 +1131,15 @@
 				10B5EF8B212FD0EB006D8EFA /* NaviResult.m in Sources */,
 				1058B3EE2106B439000FD412 /* main.m in Sources */,
 				1058B43B21070D41000FD412 /* Coordination.m in Sources */,
+				10B5EF9A212FF35F006D8EFA /* SVIndefiniteAnimatedView.m in Sources */,
 				10B5EF88212FA5E8006D8EFA /* ARViewController.m in Sources */,
 				1058B3E02106B436000FD412 /* AppDelegate.m in Sources */,
 				10974BF4210ACD29005B7F38 /* IbeaconInfo.m in Sources */,
 				105EBC2F21119E1C00A1B33E /* BRTBeaconScan.m in Sources */,
+				10B5EF99212FF35F006D8EFA /* SVProgressHUD.m in Sources */,
 				107FCF5D211A847C003FBCC1 /* MapViewController.m in Sources */,
+				10B5EF97212FF35F006D8EFA /* SVRadialGradientLayer.m in Sources */,
+				10B5EF98212FF35F006D8EFA /* SVProgressAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1335,7 +1304,6 @@
 		};
 		1058B4082106B439000FD412 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4990C00CA88C5DC115A8EC60 /* Pods-location.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1352,7 +1320,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = location/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1379,7 +1347,6 @@
 		};
 		1058B4092106B439000FD412 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3160BDB8880D66705C6A69D /* Pods-location.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1396,7 +1363,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = location/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
