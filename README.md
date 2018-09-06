@@ -67,9 +67,9 @@ AR | ARKit
 项目2D效果 左图片右gif:
 <div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/>
 <img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif"/></div>
-项目AR效果(文件大小约70M):
-<img width="375" height="667" src="http://peksjnp1c.bkt.clouddn.com/ardemo.gif"/></div>
-
+项目AR效果:
+<img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/arpic1.png"/></div>
+<img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/arpic2.png"/></div>
 ### 具体流程
 首先部署ibeacon 录入在自定义坐标系中的绝对位置
 当用户点击开始导航后 程序开始扫描附近搜得到的ibeacon 并通过三边定位算法估算出用户在绝对坐标系中的坐标
