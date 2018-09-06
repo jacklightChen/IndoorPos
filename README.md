@@ -68,7 +68,7 @@ AR | ARKit
 <div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/show.png"/>
 <img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/demo.gif"/></div>
 项目AR效果:
-<img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/arpic1.png"/></div>
+<div align=left><img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/arpic1.png"/></div>
 <img width="375" height="667" src="https://github.com/jacklightChen/IndoorPos/blob/master/demopicture/arpic2.png"/></div>
 ### 具体流程
 首先部署ibeacon 录入在自定义坐标系中的绝对位置
