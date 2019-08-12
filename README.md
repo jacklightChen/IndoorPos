@@ -1,6 +1,8 @@
 # IndoorPos
 ![License](https://img.shields.io/github/license/jacklightChen/IndoorPos.svg)
+
 ### 简介
+**项目年久失修 仅供参考 ゜▽゜)ノ**  
 该项目为本人实习期间的项目 内容为基于ibeacon的AR室内定位导航
 
 ### 使用技术
